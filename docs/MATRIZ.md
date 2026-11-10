@@ -2,7 +2,7 @@
 ARCHIVO: docs/MATRIZ.md
 ¿DE QUÉ TRATA?: Nuestra fila de la matriz comparativa (la que se llena en la plenaria).
 ¿PARA QUÉ SIRVE?: Que tengamos la fila lista para copiarla a la matriz compartida de la maestra y al README.
-ASIGNADO A: TU_NOMBRE (A) la arma; Antulio (B) revisa Curva de aprendizaje y Caso de uso; Osiel (C) revisa Reactividad y Renderizado.
+ASIGNADO A: Ale (A) la arma; Antulio (B) revisa Curva de aprendizaje y Caso de uso; Osiel (C) revisa Reactividad y Renderizado.
 Los campos con ___ se llenan con las mediciones reales de docs/METRICAS.md. No inventar números.
 -->
 

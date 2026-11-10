@@ -1,13 +1,13 @@
 <!--
 ARCHIVO: README.md
 ¿DE QUÉ TRATA?: Portada del repositorio. Es parte del PRODUCTO que pide la maestra (README con instrucciones, capturas y métricas + la fila de la matriz).
-ASIGNADO A: TU_NOMBRE (Persona A) arma el esqueleto y lo integra; Antulio (B) y Osiel (C) llenan las secciones que dicen su nombre.
+ASIGNADO A: Ale (Persona A) arma el esqueleto y lo integra; Antulio (B) y Osiel (C) llenan las secciones que dicen su nombre.
 Cuando una sección esté lista, borra su comentario de HTML y deja solo el contenido.
 -->
 
 # Catálogo React — Actividad 1 (Interacción de Servicios Digitales)
 
-<!-- TU_NOMBRE (A): 2-3 líneas: qué es la app (catálogo que consume la API pública TheMealDB (recetas), lista, filtra por texto y muestra detalle en otra ruta) y de qué materia/actividad es. -->
+<!-- Ale (A): 2-3 líneas: qué es la app (catálogo que consume la API pública TheMealDB (recetas), lista, filtra por texto y muestra detalle en otra ruta) y de qué materia/actividad es. -->
 
 ## Equipo
 
@@ -19,11 +19,11 @@ Cuando una sección esté lista, borra su comentario de HTML y deja solo el cont
 
 ## Tecnologías
 
-<!-- TU_NOMBRE (A): React, Vite, React Router, fetch nativo, CSS plano. Pon las versiones que salgan en package.json. -->
+<!-- Ale (A): React, Vite, React Router, fetch nativo, CSS plano. Pon las versiones que salgan en package.json. -->
 
 ## Instrucciones para correrlo
 
-<!-- TU_NOMBRE (A): pasos reales y probados en una máquina limpia:
+<!-- Ale (A): pasos reales y probados en una máquina limpia:
 1. git clone <url>
 2. cd catalogo-react
 3. cp .env.example .env
@@ -34,7 +34,7 @@ Cuando una sección esté lista, borra su comentario de HTML y deja solo el cont
 
 ## Estructura del proyecto
 
-<!-- TU_NOMBRE (A): copia el árbol de carpetas y una línea por carpeta (paginas, componentes, hooks, servicios, estilos, utilidades). -->
+<!-- Ale (A): copia el árbol de carpetas y una línea por carpeta (paginas, componentes, hooks, servicios, estilos, utilidades). -->
 
 ## Capturas
 
@@ -43,7 +43,7 @@ Cuando una sección esté lista, borra su comentario de HTML y deja solo el cont
 
 ## Métricas
 
-<!-- TU_NOMBRE (A): tamaño del bundle y Lighthouse (copiar de docs/METRICAS.md). -->
+<!-- Ale (A): tamaño del bundle y Lighthouse (copiar de docs/METRICAS.md). -->
 <!-- Osiel (C): tiempo de desarrollo y líneas de código (copiar de docs/METRICAS.md). -->
 
 ## Fila de la matriz comparativa (React)

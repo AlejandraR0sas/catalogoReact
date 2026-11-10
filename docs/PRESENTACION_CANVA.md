@@ -16,9 +16,9 @@ La maestra pide: **cada equipo llena su fila en la matriz compartida y presenta 
 | 1 | **Portada y prototipo** | Antulio (B) | 20 s | Título, equipo, framework (React + Vite), la app Catálogo (API TheMealDB (recetas), lista, filtro por texto, detalle en otra ruta) y una captura de la lista |
 | 2 | **Componentes, estado y reactividad** | Antulio (B) | 35 s | Componentes = funciones + JSX; props de padre a hijo; `useState`; re-render + Virtual DOM; ejemplo de nuestro proyecto (`useRetraso`) |
 | 3 | **Enrutamiento y comunidad** | Osiel (C) | 35 s | React no trae router → React Router; rutas `/` y `/receta/:id`; comunidad y ecosistema (1-2 cifras con fecha) |
-| 4 | **Renderizado, build y bundle** | TU_NOMBRE (A) | 40 s | CSR con Vite; SSR/SSG con Next.js; Vite para build; CRA descontinuado; qué pesa el bundle y cómo se podría reducir |
-| 5 | **Mediciones** | TU_NOMBRE (A) bundle y Lighthouse · Osiel (C) tiempo y líneas | 30 s | Un cuadro con 4 números: tiempo de desarrollo, líneas de código, bundle (gzip), Lighthouse. Nada más |
-| 6 | **Fila de la matriz y reflexión** | TU_NOMBRE (A) la fila · Osiel (C) la reflexión | 30 s | La fila de docs/MATRIZ.md en tabla + respuesta corta a "¿qué elegirías para un dashboard con 5 juniors?" |
+| 4 | **Renderizado, build y bundle** | Ale (A) | 40 s | CSR con Vite; SSR/SSG con Next.js; Vite para build; CRA descontinuado; qué pesa el bundle y cómo se podría reducir |
+| 5 | **Mediciones** | Ale (A) bundle y Lighthouse · Osiel (C) tiempo y líneas | 30 s | Un cuadro con 4 números: tiempo de desarrollo, líneas de código, bundle (gzip), Lighthouse. Nada más |
+| 6 | **Fila de la matriz y reflexión** | Ale (A) la fila · Osiel (C) la reflexión | 30 s | La fila de docs/MATRIZ.md en tabla + respuesta corta a "¿qué elegirías para un dashboard con 5 juniors?" |
 
 Total aproximado: 3:10. Si se pasan, recorten la lámina 2 o la 4.
 

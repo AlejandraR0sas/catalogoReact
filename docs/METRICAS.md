@@ -2,7 +2,7 @@
 ARCHIVO: docs/METRICAS.md
 ¿DE QUÉ TRATA?: Punto 3 de la actividad (Medición): tiempo de desarrollo, líneas de código, tamaño del bundle de producción y puntaje de Lighthouse.
 ¿PARA QUÉ SIRVE?: De aquí salen los números de la matriz, del README y de la exposición.
-ASIGNADO A: TU_NOMBRE (A): bundle y Lighthouse. Osiel: tiempo de desarrollo y líneas de código. Antulio (B): anota su propio tiempo.
+ASIGNADO A: Ale (A): bundle y Lighthouse. Osiel: tiempo de desarrollo y líneas de código. Antulio (B): anota su propio tiempo.
 Cómo medir: ver sección 6 de docs/REGLAS.md.
 -->
 
@@ -34,7 +34,7 @@ Pegar la salida de `npm run build`:
 | index-xxxx.css | | |
 | **Total JS gzip (el que va a la matriz)** | | |
 
-## 4. Lighthouse — TU_NOMBRE Alejandra
+## 4. Lighthouse — Ale Alejandra
 Condiciones: `npm run preview`, Chrome incógnito, modo Móvil, 3 corridas.
 | Corrida | Performance | Accessibility | Best Practices | SEO |
 |---|---|---|---|---|

@@ -2,7 +2,7 @@
  * ARCHIVO: src/utilidades/normalizarReceta.js
  * ¿DE QUÉ TRATA?: Convierte la receta 'fea' de TheMealDB en un objeto limpio.
  * ¿PARA QUÉ SIRVE?: La API devuelve campos como strMeal, strMealThumb, strIngredient1..20 y strMeasure1..20; este archivo los convierte a un formato fijo que usan B y C.
- * ASIGNADO A: TU_NOMBRE (Persona A)
+ * ASIGNADO A: Ale (Persona A)
  *
  * QUÉ LE TOCA HACER AQUÍ:
  *   1. Exportar normalizarReceta(cruda) que devuelve { id, nombre, imagen, categoria, region, instrucciones, youtube, ingredientes }.
