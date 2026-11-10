@@ -1,0 +1,10 @@
+# ARCHIVO: .gitignore
+# ¿DE QUÉ TRATA?: Lista de archivos que Git NO debe subir.
+# ¿PARA QUÉ SIRVE?: Evita subir node_modules, dist y .env al repositorio.
+# ASIGNADO A: TU_NOMBRE (Persona A)
+#
+# QUÉ LE TOCA HACER AQUÍ:
+#   1. Agregar: node_modules, dist, .env, .DS_Store, *.log
+#
+# REGLAS PARA QUE TODO CONCUERDE:
+#   - Hacerlo ANTES del primer commit.

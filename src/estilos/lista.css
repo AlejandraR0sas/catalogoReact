@@ -1,0 +1,12 @@
+/*
+ ARCHIVO: src/estilos/lista.css
+ ¿DE QUÉ TRATA?: Estilos del listado, tarjetas y buscador.
+ ¿PARA QUÉ SIRVE?: Apariencia de Inicio.jsx y sus componentes.
+ ASIGNADO A: Antulio (Persona B)
+
+ QUÉ LE TOCA HACER AQUÍ:
+   1. Grid responsivo para las tarjetas, estilos de BarraBusqueda y de la paginación.
+
+ REGLAS PARA QUE TODO CONCUERDE:
+   - Usar clases con prefijo (.lista-, .tarjeta-, .busqueda-) para no chocar con los CSS de otros.
+*/

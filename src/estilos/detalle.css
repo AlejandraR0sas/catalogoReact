@@ -1,0 +1,12 @@
+/*
+ ARCHIVO: src/estilos/detalle.css
+ ¿DE QUÉ TRATA?: Estilos de la página de detalle y de los componentes de estado.
+ ¿PARA QUÉ SIRVE?: Apariencia de DetalleReceta, Cargando, MensajeError, SinResultados y NoEncontrada.
+ ASIGNADO A: Osiel (Persona C)
+
+ QUÉ LE TOCA HACER AQUÍ:
+   1. Estilos de la ficha de detalle (imagen + datos), del indicador de carga y de los mensajes.
+
+ REGLAS PARA QUE TODO CONCUERDE:
+   - Clases con prefijo (.detalle-, .cargando-, .error-, .vacio-) para no chocar con los CSS de otros.
+*/

@@ -1,0 +1,15 @@
+/*
+ ARCHIVO: src/estilos/global.css
+ ¿DE QUÉ TRATA?: Estilos globales (reset, fuentes, variables de color, layout general).
+ ¿PARA QUÉ SIRVE?: Da una apariencia consistente a toda la app.
+ ASIGNADO A: TU_NOMBRE (Persona A)
+
+ QUÉ LE TOCA HACER AQUÍ:
+   1. Definir variables CSS en :root (colores, espaciados).
+   2. Reset básico (box-sizing, margin del body).
+   3. Estilos de .container, botones y enlaces.
+
+ REGLAS PARA QUE TODO CONCUERDE:
+   - Solo CSS plano (sin Tailwind ni librerías), así la medición del bundle es justa.
+   - B y C usan las variables de :root en sus propios CSS.
+*/
