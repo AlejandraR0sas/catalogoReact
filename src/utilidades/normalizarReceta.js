@@ -13,3 +13,26 @@
  *   - Es EL contrato de datos del equipo: B y C solo usan los campos normalizados, nunca los str... de la API.
  *   - Subirlo en el primer push del esqueleto (B y C dependen de él).
  */
+export function normalizarReceta(cruda){
+    const ingredientes=[]
+    for (let i=1; i<=20; i++){
+        const nombre=cruda[`strIngredient${i}`]
+        const medida=cruda[`strMeasure${i}`]
+        if(nombre && nombre.trim()){
+            ingredientes.push({
+                nombre:nombre.trim(),
+                medida:(medida || '').trim(),
+            })
+        }
+    }
+    return{
+        id:cruda.idMeal,
+        nombre: cruda.strMeal,
+        imagen:cruda.strMealThumb,
+        categoria:cruda.strCategory,
+        region:cruda.strArea,
+        instrucciones:cruda.strInstructions,
+        youtube:cruda.strYoutube,
+        ingredientes,
+    }
+}
