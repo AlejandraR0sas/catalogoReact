@@ -2,7 +2,7 @@
  * ARCHIVO: src/App.jsx
  * ¿DE QUÉ TRATA?: Componente raíz: define las RUTAS de la aplicación.
  * ¿PARA QUÉ SIRVE?: Conecta cada URL con su página. Es el 'mapa' del sitio.
- * ASIGNADO A: TU_NOMBRE (Persona A)
+ * ASIGNADO A: Ale (Persona A)
  *
  * QUÉ LE TOCA HACER AQUÍ:
  *   1. Definir <Routes> con un <Route element={<Estructura/>}> padre.
@@ -14,3 +14,18 @@
  *   - Estas 3 rutas son el CONTRATO del equipo; no cambiarlas sin avisar.
  *   - Importar páginas con: import Inicio from './paginas/Inicio'  (export default).
  */
+import {Routes, Route} from 'react-router-dom'
+import Estructura from './componentes/Estructura'
+
+function App(){
+    return(
+        <Routes>
+            <Route element={<Estructura />}>
+            <Route path="/" element={<h2>Inicio</h2>} />
+            <Route path="/receta/:id" element={<h2>Detalle</h2>} />
+            <Route path="*" element={<h2>Página no encontrada</h2>} />
+            </Route>
+        </Routes>
+    )
+}
+export default App
