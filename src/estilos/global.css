@@ -2,7 +2,7 @@
  ARCHIVO: src/estilos/global.css
  ¿DE QUÉ TRATA?: Estilos globales (reset, fuentes, variables de color, layout general).
  ¿PARA QUÉ SIRVE?: Da una apariencia consistente a toda la app.
- ASIGNADO A: TU_NOMBRE (Persona A)
+ ASIGNADO A: Ale (Persona A)
 
  QUÉ LE TOCA HACER AQUÍ:
    1. Definir variables CSS en :root (colores, espaciados).
@@ -13,3 +13,57 @@
    - Solo CSS plano (sin Tailwind ni librerías), así la medición del bundle es justa.
    - B y C usan las variables de :root en sus propios CSS.
 */
+:root {
+  --color-fondo: #faf7f2;
+  --color-texto: #2b2b2b;
+  --color-principal: #c2410c;
+  --color-tarjeta: #ffffff;
+  --color-borde: #e6e0d6;
+  --espacio: 1rem;
+  --radio: 10px;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  background: var(--color-fondo);
+  color: var(--color-texto);
+  line-height: 1.5;
+}
+
+a { color: var(--color-principal); text-decoration: none; }
+a:hover { text-decoration: underline; }
+img { max-width: 100%; display: block; }
+
+.contenedor { max-width: 1100px; margin: 0 auto; padding: var(--espacio); }
+
+.barra {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--espacio) 1.5rem;
+  background: var(--color-principal);
+}
+.barra a { color: #fff; font-weight: 600; }
+.barra-titulo { font-size: 1.25rem; }
+
+.pie {
+  text-align: center;
+  padding: var(--espacio);
+  font-size: 0.9rem;
+  color: #5a5a5a;
+  border-top: 1px solid var(--color-borde);
+}
+
+button {
+  font: inherit;
+  padding: 0.5rem 1rem;
+  border: 0;
+  border-radius: var(--radio);
+  background: var(--color-principal);
+  color: #fff;
+  cursor: pointer;
+}
+button:disabled { opacity: 0.5; cursor: not-allowed; }
