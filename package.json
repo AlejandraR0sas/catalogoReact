@@ -1,18 +1,16 @@
 {
   "name": "catalogo-react",
   "version": "1.0.0",
-  "description": "Catalogo utillizando react y la api de TheMealBD",
-  "main": "vite.config.js",
-  "directories": {
-    "doc": "docs"
-  },
+  "description": "Catálogo utilizando React y la API de TheMealDB",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
   },
   "keywords": [],
-  "author": "",
+  "author": "Alejandra",
   "license": "ISC",
-  "type": "commonjs",
   "dependencies": {
     "react": "^19.3.1",
     "react-dom": "^19.3.1",
