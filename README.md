@@ -1,5 +1,5 @@
 # Investigación
-[Ver Investigación](docs/investigacion.md)
+[Ver Investigación](docs/INVESTIGACION.md)
 # Catálogo React
 
 Aplicación web tipo "catálogo" hecha con **React** y **Vite** para la materia de Interacción de Servicios Digitales. Consume la API pública **TheMealDB** (recetas), muestra una lista con buscador por texto y permite ver el detalle de cada receta en otra ruta. 
