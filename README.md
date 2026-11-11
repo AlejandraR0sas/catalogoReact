@@ -1,10 +1,3 @@
-<!--
-ARCHIVO: README.md
-¿DE QUÉ TRATA?: Portada del repositorio. Es parte del PRODUCTO que pide la maestra (README con instrucciones, capturas y métricas + la fila de la matriz).
-ASIGNADO A: Ale (Persona A) arma el esqueleto y lo integra; Antulio (B) y Osiel (C) llenan las secciones que dicen su nombre.
-Cuando una sección esté lista, borra su comentario de HTML y deja solo el contenido.
--->
-
 # Catálogo React
 
 Aplicación web tipo "catálogo" hecha con **React** y **Vite** para la materia de Interacción de Servicios Digitales. Consume la API pública **TheMealDB** (recetas), muestra una lista con buscador por texto y permite ver el detalle de cada receta en otra ruta. 
