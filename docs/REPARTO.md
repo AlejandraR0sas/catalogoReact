@@ -31,6 +31,8 @@ ASIGNADO A: Los 3. Marcar con [x] lo terminado.
 - [ ] Capturas · su parte de la investigación
 
 **Persona C**
-- [ ] `servicioDetalle.js` y `useReceta.js`
-- [ ] Detalle + 404 + Cargando/Error/SinResultados
-- [ ] Tiempo y líneas de código · su parte de la investigación · reflexión
+- [x] `servicioDetalle.js` y `useReceta.js`
+- [x] Detalle + 404 + Cargando/Error/SinResultados
+- [ ] Tiempo personal y total del equipo (faltan registros de inicio/fin de los tres)
+- [x] Líneas de código · su parte de la investigación · reflexión
+- [ ] Capturas reales del detalle, estado de carga/error y vista móvil

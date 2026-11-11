@@ -20,9 +20,9 @@ ASIGNADO A: cada sección dice su responsable. Todo lo de abajo es BORRADOR: lé
 - En nuestro proyecto: el texto del buscador y la página son `useState`; `useRetraso` evita pedir a la API en cada tecla.
 
 ## 3. Enrutamiento — Osiel
-- React **no trae router** propio. Opciones: **React Router** (el que usamos), TanStack Router, o el router integrado de Next.js.
-- Con React Router: rutas declarativas (`<Routes>`, `<Route>`), parámetros (`/receta/:id` con `useParams`), navegación sin recargar (`<Link>`), layouts con `<Outlet>`.
-- En nuestro proyecto: 3 rutas (`/`, `/receta/:id`, `*`).
+- React no incluye un sistema de rutas en su paquete principal. Entre las opciones están React Router, TanStack Router y el enrutamiento de frameworks como Next.js.
+- React Router permite declarar rutas con `<Routes>` y `<Route>`, leer parámetros con `useParams`, navegar con `<Link>` y compartir layouts con `<Outlet>`.
+- En el proyecto se definieron tres rutas: `/` para la lista, `/receta/:id` para el detalle y `*` para direcciones inexistentes. La ruta de detalle obtiene el id de la URL y carga una receta normalizada.
 
 ## 4. Renderizado (CSR, SSR, SSG) — Alejandra
 - **Con Vite (nuestro caso): CSR.** El navegador descarga un HTML casi vacío + JavaScript y React dibuja la página en el cliente. Ventaja: simple y rápido de navegar después; desventaja: primera carga y SEO más débiles.
@@ -40,16 +40,13 @@ ASIGNADO A: cada sección dice su responsable. Todo lo de abajo es BORRADOR: lé
 - Formas de reducir: `React.lazy` + code splitting por ruta, imágenes con `loading="lazy"`, no meter librerías pesadas.
 
 ## 7. Comunidad y ecosistema — Osiel
-- La biblioteca de UI más usada; muchísimos tutoriales, respuestas en Stack Overflow, vacantes y librerías (tablas, gráficas, formularios, UI kits).
-- Mantenida por Meta y la comunidad. Cifras (descargas en npm, estrellas en GitHub, Stack Overflow Developer Survey): (verificar y poner la fecha de consulta).
+- React cuenta con un ecosistema amplio de paquetes para interfaces, formularios, tablas y gráficas, además de documentación y una comunidad activa. El proyecto se desarrolla públicamente y recibe contribuciones de Meta y de la comunidad.
+- Como referencia comparable, en la encuesta Stack Overflow Developer Survey 2025 React aparece entre las tecnologías web reportadas por participantes. La página consultada no se usa aquí para afirmar que sea “la más usada”; la encuesta refleja a quienes respondieron, no a todos los desarrolladores.
+- Consulta: 10 de noviembre de 2026. Fuentes: [Stack Overflow Developer Survey 2025 — Technology](https://survey.stackoverflow.co/2025/technology) y [repositorio oficial de React en GitHub](https://github.com/react/react) (las estrellas cambian con el tiempo, por eso no se fija un conteo en este documento).
 
 ## Fila de la matriz — ver docs/MATRIZ.md
 
 ## Reflexión — Osiel (C)
 **¿Qué framework elegirías para un dashboard de datos en una empresa con 5 desarrolladores junior, y por qué?**
 
-Borrador (cada uno lo adapta; deben ponerse de acuerdo en una respuesta):
-- **Una respuesta defendible: React + Vite** (con TypeScript si el equipo está dispuesto). Razones: ecosistema enorme para dashboards (Recharts/Chart.js para gráficas, TanStack Table para tablas, TanStack Query para datos), muchísima documentación y ayuda disponible para juniors, y es fácil contratar/relevar gente. Los hooks y el flujo unidireccional se aprenden en pocas semanas.
-- **Riesgo a reconocer:** React deja muchas decisiones al equipo (router, estado, fetching, estructura); con 5 juniors puede salir desordenado. Se mitiga con una plantilla de proyecto, reglas como las de docs/REGLAS.md, revisión de PRs y un linter.
-- **Alternativa a mencionar:** Angular (más estructura "de fábrica": router, formularios, inyección de dependencias, TypeScript) o Vue (curva de aprendizaje suave). Si la empresa ya usa uno, conviene ese.
-- Cierre sugerido: "Elegiría React por ecosistema y ayuda disponible, imponiendo reglas y una plantilla para compensar la libertad."
+Elegiría React con Vite y una plantilla común para el equipo. Su ecosistema ofrece opciones conocidas para gráficas, tablas y consultas de datos, y la documentación y comunidad facilitan encontrar ejemplos y resolver dudas. Como React deja decisiones de estructura y manejo de datos en manos del equipo, acordaría desde el inicio convenciones, revisión de cambios y una librería por necesidad. Así los cinco juniors pueden trabajar con una base compartida sin agregar herramientas innecesarias.

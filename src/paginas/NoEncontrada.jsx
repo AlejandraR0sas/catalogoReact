@@ -1,12 +1,13 @@
-/**
- * ARCHIVO: src/paginas/NoEncontrada.jsx
- * ¿DE QUÉ TRATA?: Página 404 para rutas que no existen.
- * ¿PARA QUÉ SIRVE?: Evita una pantalla en blanco si alguien escribe una URL inválida.
- * ASIGNADO A: Osiel (Persona C)
- *
- * QUÉ LE TOCA HACER AQUÍ:
- *   1. Mostrar mensaje 'Página no encontrada' y un <Link> al inicio.
- *
- * REGLAS PARA QUE TODO CONCUERDE:
- *   - Export default.
- */
+import { Link } from 'react-router-dom'
+import '../estilos/detalle.css'
+
+export default function NoEncontrada() {
+  return (
+    <section className="detalle-estado">
+      <p className="detalle-categoria">Error 404</p>
+      <h1>Página no encontrada</h1>
+      <p>La dirección que buscas no existe o fue movida.</p>
+      <Link className="detalle-boton" to="/">Volver al catálogo</Link>
+    </section>
+  )
+}

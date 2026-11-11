@@ -22,6 +22,14 @@ La maestra pide: **cada equipo llena su fila en la matriz compartida y presenta 
 
 Total aproximado: 3:10. Si se pasan, recorten la lámina 2 o la 4.
 
+## Texto base de Osiel (C)
+
+**Lámina 3 — Enrutamiento y comunidad:** React no incluye router propio. En este proyecto usamos React Router para la lista `/`, el detalle `/receta/:id` y la ruta de error `*`. Sus herramientas permiten leer parámetros y navegar sin recargar. React también tiene un ecosistema amplio; la encuesta Stack Overflow 2025 lo incluye entre las tecnologías web reportadas por sus participantes (consulta: 10 nov 2026).
+
+**Lámina 5 — Mediciones de Osiel:** código fuente actual: 266 líneas (171 JS/JSX y 95 CSS). El tiempo personal y el total del equipo quedan pendientes de sumar los registros de inicio y fin de cada integrante; no se estiman.
+
+**Lámina 6 — Reflexión:** Elegiría React con Vite y una plantilla común. Su ecosistema facilita encontrar componentes y ayuda para gráficas y tablas. Para que cinco juniors trabajen de forma consistente, acordaría convenciones y revisiones desde el inicio.
+
 ## Reglas para que se vea como una sola presentación
 - Una sola plantilla de Canva, **mismas fuentes y colores** (el primero que cree el archivo lo comparte con "puede editar" a los otros dos).
 - Texto corto: viñetas de máximo ~8 palabras; los datos van en cuadros, no en párrafos.

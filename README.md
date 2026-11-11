@@ -39,12 +39,12 @@ Cuando una sección esté lista, borra su comentario de HTML y deja solo el cont
 ## Capturas
 
 <!-- Antulio (B): captura de la lista y del buscador filtrando. Guárdalas en docs/capturas/ y enlázalas aquí con ![texto](docs/capturas/lista.png) -->
-<!-- Osiel (C): captura del detalle, del estado de carga/error y de la vista móvil. -->
+<!-- Pendiente: guardar capturas reales del detalle, del estado de carga/error y de la vista móvil en docs/capturas/. -->
 
 ## Métricas
 
 <!-- Ale (A): tamaño del bundle y Lighthouse (copiar de docs/METRICAS.md). -->
-<!-- Osiel (C): tiempo de desarrollo y líneas de código (copiar de docs/METRICAS.md). -->
+Tiempo de desarrollo: pendiente de los registros del equipo. Código fuente: **266 líneas** (171 JS/JSX y 95 CSS; sin comentarios ni líneas en blanco).
 
 ## Fila de la matriz comparativa (React)
 
@@ -52,4 +52,4 @@ Cuando una sección esté lista, borra su comentario de HTML y deja solo el cont
 
 ## Pregunta de reflexión
 
-<!-- Osiel (C): copiar la respuesta final de docs/INVESTIGACION.md (sección Reflexión). -->
+Elegiría React con Vite y una plantilla común para el equipo. Su ecosistema ofrece opciones conocidas para gráficas, tablas y consultas de datos, y la documentación y comunidad facilitan encontrar ejemplos y resolver dudas. Como React deja decisiones de estructura y manejo de datos en manos del equipo, acordaría desde el inicio convenciones, revisión de cambios y una librería por necesidad. Así los cinco juniors pueden trabajar con una base compartida sin agregar herramientas innecesarias.
