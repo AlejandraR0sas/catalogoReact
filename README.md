@@ -104,7 +104,6 @@ Medido con `npm run preview`, Chrome en incógnito, modo móvil.
 |---|---|---|---|
 | 100 | 100 | 96 | 82 |
 
-Métricas de rendimiento: First Contentful Paint 1.5 s, Largest Contentful Paint 1.5 s, Total Blocking Time 0 ms, Cumulative Layout Shift 0, Speed Index 1.5 s.Tiempo de desarrollo: pendiente de los registros del equipo. Código fuente: **266 líneas** (171 JS/JSX y 95 CSS; sin comentarios ni líneas en blanco).
 
 ## Fila de la matriz comparativa (React)
 
