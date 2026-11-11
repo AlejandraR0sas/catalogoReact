@@ -11,3 +11,20 @@
  * REGLAS PARA QUE TODO CONCUERDE:
  *   - Siempre poner key única en listas.
  */
+
+
+import TarjetaReceta from "./TarjetaReceta.jsx";
+import "../estilos/lista.css";
+
+export default function ListaRecetas({ recetas }) {
+    return (
+        <div className="lista-recetas">
+            {recetas.map((receta) => (
+                <TarjetaReceta
+                    key={receta.id}
+                    receta={receta}
+                />
+            ))}
+        </div>
+    );
+}

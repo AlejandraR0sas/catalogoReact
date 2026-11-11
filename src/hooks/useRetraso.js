@@ -10,3 +10,23 @@
  * REGLAS PARA QUE TODO CONCUERDE:
  *   - Nombre del hook empieza con 'use'.
  */
+
+
+import { useEffect, useState } from "react";
+
+export default function useRetraso(valor, retraso = 400) {
+    const [valorRetrasado, setValorRetrasado] = useState(valor);
+
+    useEffect(() => {
+        const temporizador = setTimeout(() => {
+            setValorRetrasado(valor);
+        }, retraso);
+
+        return () => {
+            clearTimeout(temporizador);
+        };
+
+    }, [valor, retraso]);
+
+    return valorRetrasado;
+}

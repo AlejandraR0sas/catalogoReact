@@ -15,3 +15,66 @@
  *   - Devuelve SIEMPRE un ARREGLO de recetas ya normalizadas con normalizarReceta (contrato; Inicio.jsx depende de esto).
  *   - Sin axios: solo fetch.
  */
+
+
+/**
+ * ARCHIVO: src/servicios/servicioLista.js
+ * Servicio encargado de consultar la lista de recetas de TheMealDB.
+ */
+
+import { URL_API } from "../config.js";
+import { normalizarReceta } from "../utilidades/normalizarReceta.js";
+
+export async function obtenerRecetas(nombre = '', senal) {
+    try {
+        // Preparar la URL de búsqueda.
+        const busqueda = nombre.trim();
+
+        let url = `${URL_API}/search.php?s=${encodeURIComponent(busqueda)}`;
+
+        // Realizar la petición a la API.
+        let respuesta = await fetch(url, {
+            signal: senal
+        });
+
+        if (!respuesta.ok) {
+            throw new Error("No se pudo consultar la lista de recetas.");
+        }
+
+        let resultado = await respuesta.json();
+
+        // Si la búsqueda inicial está vacía y no devuelve recetas,
+        // utilizar la letra A como catálogo inicial.
+        if (!resultado.meals && !busqueda) {
+            url = `${URL_API}/search.php?f=a`;
+
+            respuesta = await fetch(url, {
+                signal: senal
+            });
+
+            if (!respuesta.ok) {
+                throw new Error("No se pudo cargar el catálogo de recetas.");
+            }
+
+            resultado = await respuesta.json();
+        }
+
+        // Si no hay coincidencias, devolver un arreglo vacío.
+        if (!resultado.meals) {
+            return [];
+        }
+
+        // Convertir las recetas al formato establecido por el equipo.
+        return resultado.meals.map(normalizarReceta);
+
+    } catch (error) {
+        // Permitir que AbortController gestione las cancelaciones.
+        if (error.name === "AbortError") {
+            throw error;
+        }
+
+        throw new Error(
+            error.message || "Ocurrió un problema al cargar las recetas."
+        );
+    }
+}

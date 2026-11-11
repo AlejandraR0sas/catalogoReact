@@ -12,3 +12,35 @@
  * REGLAS PARA QUE TODO CONCUERDE:
  *   - La ruta de destino es /receta/:id (definida en App.jsx).
  */
+
+
+import { Link } from "react-router-dom";
+
+export default function TarjetaReceta({ receta }) {
+    return (
+        <article className="tarjeta-receta">
+            <Link
+                to={`/receta/${receta.id}`}
+                className="tarjeta-receta-enlace"
+            >
+                <img
+                    src={receta.imagen}
+                    alt={`Platillo: ${receta.nombre}`}
+                    loading="lazy"
+                />
+
+                <div className="tarjeta-receta-contenido">
+                    <h2>{receta.nombre}</h2>
+
+                    <p>
+                        {receta.categoria || "Sin categoría"}
+                    </p>
+
+                    <span>
+                        {receta.region || "Región no especificada"}
+                    </span>
+                </div>
+            </Link>
+        </article>
+    );
+}

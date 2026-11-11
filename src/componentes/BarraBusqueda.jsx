@@ -11,3 +11,19 @@
  * REGLAS PARA QUE TODO CONCUERDE:
  *   - Componente 'tonto': no hace fetch, solo muestra y avisa.
  */
+
+
+
+export default function BarraBusqueda({ valor, alCambiar }) {
+    return (
+        <div className="barra-busqueda">
+            <input
+                type="search"
+                value={valor}
+                onChange={(evento) => alCambiar(evento.target.value)}
+                placeholder="Buscar receta..."
+                aria-label="Buscar receta"
+            />
+        </div>
+    );
+}
