@@ -1,12 +1,30 @@
-/*
- ARCHIVO: src/estilos/detalle.css
- ¿DE QUÉ TRATA?: Estilos de la página de detalle y de los componentes de estado.
- ¿PARA QUÉ SIRVE?: Apariencia de DetalleReceta, Cargando, MensajeError, SinResultados y NoEncontrada.
- ASIGNADO A: Osiel (Persona C)
-
- QUÉ LE TOCA HACER AQUÍ:
-   1. Estilos de la ficha de detalle (imagen + datos), del indicador de carga y de los mensajes.
-
- REGLAS PARA QUE TODO CONCUERDE:
-   - Clases con prefijo (.detalle-, .cargando-, .error-, .vacio-) para no chocar con los CSS de otros.
-*/
+.detalle-pagina { padding: 1rem 0 2rem; }
+.detalle-volver { display: inline-block; margin: 0 0 1rem; font-weight: 700; }
+.detalle-tarjeta { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.2fr); overflow: hidden; background: var(--color-tarjeta); border: 1px solid var(--color-borde); border-radius: var(--radio); box-shadow: 0 8px 24px #2b2b2b12; }
+.detalle-imagen { width: 100%; height: 100%; min-height: 420px; object-fit: cover; }
+.detalle-contenido { padding: clamp(1.25rem, 4vw, 2.5rem); }
+.detalle-contenido h1 { margin: 0 0 1.5rem; font-size: clamp(2rem, 5vw, 3rem); line-height: 1.1; }
+.detalle-categoria { margin: 0 0 .5rem; color: var(--color-principal); font-size: .85rem; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; }
+.detalle-seccion { margin-top: 1.75rem; }
+.detalle-seccion h2 { margin: 0 0 .75rem; font-size: 1.25rem; }
+.detalle-ingredientes { margin: 0; padding: 0; list-style: none; }
+.detalle-ingredientes li { display: flex; justify-content: space-between; gap: 1rem; padding: .55rem 0; border-bottom: 1px solid var(--color-borde); }
+.detalle-ingredientes li span:last-child { color: #656565; text-align: right; }
+.detalle-instrucciones { white-space: pre-line; }
+.detalle-video, .detalle-boton { display: inline-block; margin-top: 1rem; padding: .65rem 1rem; border-radius: var(--radio); background: var(--color-principal); color: #fff; font-weight: 700; }
+.detalle-estado { padding: 3rem 1rem; text-align: center; }
+.detalle-estado h1 { margin: .25rem 0; }
+.cargando { display: flex; min-height: 45vh; align-items: center; justify-content: center; gap: .75rem; font-weight: 700; }
+.cargando-spinner { width: 1.25rem; height: 1.25rem; border: 3px solid var(--color-borde); border-top-color: var(--color-principal); border-radius: 50%; animation: cargando-giro .8s linear infinite; }
+@keyframes cargando-giro { to { transform: rotate(360deg); } }
+.error-mensaje, .vacio-mensaje { margin: 1.5rem 0; padding: 1rem; border-radius: var(--radio); text-align: center; }
+.error-mensaje { border: 1px solid #dc7b70; background: #fff0ed; color: #8c2519; }
+.vacio-mensaje { border: 1px solid var(--color-borde); background: var(--color-tarjeta); }
+@media (max-width: 700px) {
+  .detalle-tarjeta { grid-template-columns: 1fr; }
+  .detalle-imagen { min-height: 0; max-height: 360px; aspect-ratio: 4 / 3; }
+  .detalle-contenido { padding: 1.25rem; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .cargando-spinner { animation-duration: 2s; }
+}

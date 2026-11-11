@@ -13,15 +13,15 @@ Cómo medir: ver sección 6 de docs/REGLAS.md.
 |---|---|---|---|---|
 | | | | | |
 
-**Total del equipo:** ___ min (___ h) · **Alejandra:** ___ · **Osiel:** ___ · **Antulio:** ___
+**Total del equipo:** Pendiente de que cada integrante registre inicio y fin · **Alejandra:** pendiente · **Osiel:** pendiente · **Antulio:** pendiente
 
 ## 2. Líneas de código — Osiel 
-Comando usado: `_______________` · Fecha/commit: `_______`
+Comando usado: conteo de archivos `.js`, `.jsx` y `.css` en `src/`, sin líneas vacías ni líneas de comentario · Fecha: 10 nov 2026 (conteo del estado actual del árbol de trabajo; incluye el código fuente presente al medir).
 | Tipo | Líneas |
 |---|---|
-| JS/JSX | |
-| CSS | |
-| **Total** | |
+| JS/JSX | 171 |
+| CSS | 95 |
+| **Total** | 266 |
 
 ## 3. Bundle de producción — Alejandra
 Pegar la salida de `npm run build`:
