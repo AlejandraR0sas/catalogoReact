@@ -35,9 +35,9 @@ ASIGNADO A: cada sección dice su responsable. Todo lo de abajo es BORRADOR: lé
 - Next.js trae su propio sistema de build (Turbopack/webpack, verificar versión).
 
 ## 6. Tamaño del bundle
-- `react` + `react-dom` son el "costo base" de cualquier app React; el router suma un poco más. Es mayor que el de Svelte o Solid, que compilan sin runtime grande.
-- **No pongan un número de internet: pongan el que midan.** Ver docs/METRICAS.md (`npm run build`, JS en gzip).
-- Formas de reducir: `React.lazy` + code splitting por ruta, imágenes con `loading="lazy"`, no meter librerías pesadas.
+- `react` y `react-dom` son el "costo base" de cualquier app React, y el router suma un poco más. Por eso suele pesar más que Svelte o Solid, que compilan sin un runtime grande.
+- En nuestro proyecto, el JavaScript de producción pesa **265.43 kB** sin comprimir y **84.33 kB con gzip** (medido con `npm run build`). El CSS pesa 1.53 kB en gzip.
+- Formas de reducirlo: cargar las rutas bajo demanda con `React.lazy` y code splitting, usar imágenes con `loading="lazy"` y no agregar librerías pesadas.
 
 ## 7. Comunidad y ecosistema
 - React cuenta con un ecosistema amplio de paquetes para interfaces, formularios, tablas y gráficas, además de documentación y una comunidad activa. El proyecto se desarrolla públicamente y recibe contribuciones de Meta y de la comunidad.

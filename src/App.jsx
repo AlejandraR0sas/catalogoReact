@@ -18,11 +18,13 @@ import {Routes, Route} from 'react-router-dom'
 import Estructura from './componentes/Estructura'
 import DetalleReceta from './paginas/DetalleReceta'
 import NoEncontrada from './paginas/NoEncontrada'
+import Inicio from './paginas/Inicio'
+
 function App(){
     return(
         <Routes>
             <Route element={<Estructura />}>
-            <Route path="/" element={<h2>Inicio</h2>} />
+            <Route path="/" element={<Inicio />} />
             <Route path="/receta/:id" element={<DetalleReceta />}  />
             <Route path="*" element={<NoEncontrada />} />
             </Route>
