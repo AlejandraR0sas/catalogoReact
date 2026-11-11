@@ -12,3 +12,50 @@
  * REGLAS PARA QUE TODO CONCUERDE:
  *   - Forma de retorno OBLIGATORIA: { datos, cargando, error }.
  */
+
+
+import { useEffect, useState } from "react";
+import { obtenerRecetas } from "../servicios/servicioLista.js";
+
+export default function useRecetas(nombre = '') {
+    const [datos, setDatos] = useState([]);
+    const [cargando, setCargando] = useState(true);
+    const [error, setError] = useState(null);
+
+    useEffect(() => {
+        const controlador = new AbortController();
+
+        async function cargarRecetas() {
+            setCargando(true);
+            setError(null);
+
+            try {
+                const recetas = await obtenerRecetas(
+                    nombre,
+                    controlador.signal
+                );
+
+                setDatos(recetas);
+
+            } catch (error) {
+                if (error.name !== "AbortError") {
+                    setError(error.message);
+                    setDatos([]);
+                }
+            } finally {
+                if (!controlador.signal.aborted) {
+                    setCargando(false);
+                }
+            }
+        }
+
+        cargarRecetas();
+
+        return () => {
+            controlador.abort();
+        };
+
+    }, [nombre]);
+
+    return { datos, cargando, error };
+}
