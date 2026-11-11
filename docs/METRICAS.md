@@ -10,7 +10,8 @@ Cómo medir: ver sección 6 de docs/REGLAS.md.
 
 ## 1. Tiempo de desarrollo — Osiel junta los datos; cada quien anota el suyo
 | Persona | Tarea | Inicio | Fin | Minutos |
-| Ale | Crear proyecto e instalar dependencias | | | |
+|---|---|---|---|---|
+| Ale | Crear proyecto e instalar dependencias | 13:30|3:30 | 120|
 | Ale | Configurar Vite, index.html, .gitignore, .env.example y config.js | | | |
 | Ale | Crear normalizarReceta.js | | | |
 | Ale | Crear main.jsx y App.jsx (rutas) | | | |
