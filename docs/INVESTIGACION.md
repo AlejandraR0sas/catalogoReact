@@ -24,12 +24,12 @@ ASIGNADO A: cada sección dice su responsable. Todo lo de abajo es BORRADOR: lé
 - Con React Router: rutas declarativas (`<Routes>`, `<Route>`), parámetros (`/receta/:id` con `useParams`), navegación sin recargar (`<Link>`), layouts con `<Outlet>`.
 - En nuestro proyecto: 3 rutas (`/`, `/receta/:id`, `*`).
 
-## 4. Renderizado (CSR, SSR, SSG) — Alejandra
-- **Con Vite (nuestro caso): CSR.** El navegador descarga un HTML casi vacío + JavaScript y React dibuja la página en el cliente. Ventaja: simple y rápido de navegar después; desventaja: primera carga y SEO más débiles.
+## 4. Renderizado (CSR, SSR, SSG)
+- **CSR:** El navegador descarga un HTML casi vacío + JavaScript y React dibuja la página en el cliente(navegador). Ventaja: simple y rápido de navegar después. Desventaja: primera carga y SEO más débiles.
 - **SSR y SSG** se logran con un **framework sobre React**: Next.js (SSR, SSG, ISR, Server Components) o React Router en modo framework. React por sí solo es una librería de UI.
-- Para este prototipo no necesitamos SSR/SSG, pero sí se debe mencionar en la matriz: "CSR (Vite); SSR/SSG con Next.js".
 
-## 5. Herramientas de build — Alejandra
+
+## 5. Herramientas de build
 - **Vite** es la opción actual para empezar un proyecto React sin framework: servidor de desarrollo muy rápido (módulos ES nativos) y `vite build` para producción (minificación, tree-shaking, code splitting).
 - **Create React App está descontinuado** desde febrero de 2025; la propia documentación de React lo explica y recomienda un framework (Next.js, React Router) o Vite. Fuente: https://react.dev/blog/2025/02/14/sunsetting-create-react-app
 - Next.js trae su propio sistema de build (Turbopack/webpack, verificar versión).
