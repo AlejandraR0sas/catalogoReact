@@ -16,14 +16,15 @@
  */
 import {Routes, Route} from 'react-router-dom'
 import Estructura from './componentes/Estructura'
-
+import DetalleReceta from './paginas/DetalleReceta'
+import NoEncontrada from './paginas/NoEncontrada'
 function App(){
     return(
         <Routes>
             <Route element={<Estructura />}>
             <Route path="/" element={<h2>Inicio</h2>} />
-            <Route path="/receta/:id" element={<h2>Detalle</h2>} />
-            <Route path="*" element={<h2>Página no encontrada</h2>} />
+            <Route path="/receta/:id" element={<DetalleReceta />}  />
+            <Route path="*" element={<NoEncontrada />} />
             </Route>
         </Routes>
     )
